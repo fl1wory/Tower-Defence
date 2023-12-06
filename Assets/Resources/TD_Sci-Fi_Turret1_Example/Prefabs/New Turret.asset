@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 976e447666eb9a043b81824340664d23, type: 3}
+  m_Name: New Turret
+  m_EditorClassIdentifier: 
+  _damage: 10
+  _price: 1
+  _fireRate: 0.3
+  _speedBullet: 100
+  _turretName: OrangeTurret
+  _canRotate: 1
+  _turretSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  _modelTurret: {fileID: 1572146023126494393, guid: 448adfdc47d8411459c0b0a5d797e5c6, type: 3}

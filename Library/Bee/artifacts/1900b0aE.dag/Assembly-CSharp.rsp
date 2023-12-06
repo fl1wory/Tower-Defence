@@ -355,10 +355,12 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"J:/Unity 2022.3.5f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"J:/Unity 2022.3.5f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/Scripts/bullet.cs"
-"Assets/Scripts/CameraController.cs"
-"Assets/Scripts/rotateScript.cs"
-"Assets/Scripts/shootScript.cs"
+"Assets/Resources/Scripts/bullet.cs"
+"Assets/Resources/Scripts/CameraController.cs"
+"Assets/Resources/Scripts/rotateScript.cs"
+"Assets/Resources/Scripts/shootScript.cs"
+"Assets/Resources/Scripts/TurretData.cs"
+"Assets/Resources/Scripts/TurretScript.cs"
 -langversion:9.0
 
 /deterministic
