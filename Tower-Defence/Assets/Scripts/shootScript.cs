@@ -24,23 +24,23 @@ public class shootScript : MonoBehaviour
         if(GetComponent<rotateScript>().nearestEnemy != null && Time.time > nextShootTime)
         {
             nextShootTime = Time.time + shootSpeed;
+            shootFlash.GetComponent<ParticleSystem>().Play();
             Shoot();
         }
         else
         {
-            shootFlash.SetActive(false);
+            shootFlash.GetComponent<ParticleSystem>().Stop();
         }
     }
 
     public void Shoot()
     {
-        shootFlash.SetActive(true);
         GameObject bullet = Instantiate(bulletPrefab, bulletPrefab.transform);
+        Destroy(bullet, 0.3f);
         bullet.transform.position = bulletPrefab.transform.position;
         bullet.transform.rotation = Quaternion.Euler(Quaternion.Lerp(headPart.transform.rotation, lookRotation, 0.08f).eulerAngles.x, Quaternion.Lerp(headPart.transform.rotation, lookRotation, 0.08f).eulerAngles.y, 0f);
         bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * bulletSpeed, ForceMode.Impulse);
         Debug.Log("shoot");
-        Destroy(bullet, 0.3f);
-        
+        shootFlash.GetComponent<ParticleSystem>().Play();
     }
 }
